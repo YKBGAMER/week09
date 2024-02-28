@@ -24,7 +24,7 @@ class TestBookManager(unittest.TestCase):
         self.assertIn(self.book1, books)
         self.assertIn(self.book2, books)
 
-     def test_add_duplicated_book(self):
+    def test_add_duplicated_book(self):
         self.manager.add_book(self.book1)
         self.assertEqual(len(self.manager.list_books()), 2)
 
